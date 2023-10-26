@@ -36,7 +36,7 @@ public class Deck {
         this.deckCards = deckCards;
     }
 
-    public List<String> GenerateDeck(List<String> suite, List<String> ranks) {
+    public List<String> generateDeck(List<String> suite, List<String> ranks) {
         List<String> deckCards = new ArrayList<>();
         for (String suit: suite ){
             for(String rank: ranks){

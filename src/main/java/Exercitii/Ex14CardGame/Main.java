@@ -26,8 +26,7 @@ public class Main {
         ranks.add("A");
         Deck deck = new Deck(suite, ranks);
 
-        deck.setDeckCards(deck.GenerateDeck(ranks, suite));
-        System.out.println(deck.getDeckCards());
+        System.out.println(deck.generateDeck(ranks, suite));
 
         Player player1 = new Player("Ionica Bostan");
         Player player2 = new Player("Costica Butucel");

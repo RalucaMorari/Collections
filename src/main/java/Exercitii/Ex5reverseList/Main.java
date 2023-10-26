@@ -30,11 +30,12 @@ public class Main {
         for (String word : words) {
             if (word.length() >= 3) {
                 reverseList.add(word);
-                Collections.reverse(reverseList);
             }
         }
+        Collections.reverse(reverseList);
         return reverseList;
     }
+
 }
 
 

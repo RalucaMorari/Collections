@@ -32,6 +32,8 @@ public class Ex4 {
 
         System.out.println(sortedNames);
 
+//        persons.sort((p1,p2) -> p1.getName().compareTo(p2.getName()))
+
        Long NumberOfNamesStartWithA = topNames2015.stream()
                 // luam doar numele care incep cu A
                 .filter(name -> name.startsWith("A"))

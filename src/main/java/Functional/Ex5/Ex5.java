@@ -25,6 +25,8 @@ public class Ex5 {
                 .filter(person -> person.getAge()>=18)
                 .collect(Collectors.toList());
 
+//        persons.sort((p1,p2) -> p1.getName().compareTo(p2.getName()));
+
         System.out.println(PersonsThatCanVote);
 
     }

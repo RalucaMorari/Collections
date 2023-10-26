@@ -3,7 +3,9 @@ package Exercitii.Ex11;
 
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class DuplicateNumber {
     public static void main(String[] args) {
@@ -17,11 +19,23 @@ public class DuplicateNumber {
     }
 
     public static String getDuplicateNumber(List<String> numbers) {
-        List<String> uniqueNumbers = new ArrayList<>();
+//        List<String> uniqueNumbers = new ArrayList<>();
+//        String duplicateNumber = "";
+//        for (String number : numbers) {
+//            if (uniqueNumbers.contains(number)) {
+//                duplicateNumber = number;
+//            } else {
+//                uniqueNumbers.add(number);
+//            }
+//        }
+//        return duplicateNumber;
+
+        Set<String> uniqueNumbers = new HashSet<>();
         String duplicateNumber = "";
         for (String number : numbers) {
             if (uniqueNumbers.contains(number)) {
                 duplicateNumber = number;
+                break;
             } else {
                 uniqueNumbers.add(number);
             }
